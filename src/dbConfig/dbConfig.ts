@@ -1,5 +1,8 @@
 import mongoose from "mongoose";
 
+
+// MONGO_URL é a chave que você pega no mongodb e estou
+// salvando dentro de .env
 export async function connect() {
   try {
     mongoose.connect(process.env.MONGO_URL!);
